@@ -1,0 +1,74 @@
+$padWidth: 12vh;
+$padHeight: 12vh;
+
+body {
+  background-color: #122012;
+  color: #DDD0DD;
+  text-align: center;
+  font-family: Russo One;
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+#drum-machine {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background-color: #92A092;
+  border-radius: 10px;
+  width: 150vh;
+  height: 80vh;
+  min-height: 150px;
+  min-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 15vh;
+  border: 5px solid #503070;
+  z-index: 1;
+}
+
+#display {
+  background-color: gray;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: auto;
+  font-size: $padHeight/1.5;
+  padding: 2vh;
+  width: auto;
+  z-index: 5;
+}
+
+.drum-pad {
+  display: flex;
+  width: $padWidth;
+  height: $padHeight;
+  min-height: 15px;
+  min-width: 15px;
+  font-size: $padHeight/2;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin: 2vh;
+  cursor: pointer;
+  border-radius: 5vh;
+}
+
+.inner-container {
+  width: $padWidth * 3 + 15;
+}
+
+.label {
+  position: relative;
+  font-size: $padHeight/1.25;
+  margin: 3vh;
+}
+
+#left-side {
+  float:left;
+  margin-left: 10vh;
+}
+#right-side {
+  float: right;
+  margin-right: 10vh;
+}
