@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  background: #778;
+  color: #FFF;
+  align-items: center;
+  justify-content: center;
+}
+
+#outer-box {
+  width: 14em;
+  height:21em;
+  background-color: #B80;
+  margin: 20px;
+  padding: 10px;
+  border: 4px solid;
+  border-radius: 10px;
+}
+
+#displayContainer {
+  font-family: Courier New;
+  display: flex;
+  height: 1.6em;
+  width: 7.8em;
+  background-color: #666;
+  border-radius: 5px;
+  color: #FFF;
+  padding: 10px;
+  font-size: 1.6em;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#buttons {
+  width: 14em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+button {
+  display: flex;
+  background-color: #223;
+  color: #BBC;
+  height: 46.5px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  margin: 3px;
+  border-radius: 4px;
+  font-weight: bold;
+  &:hover {
+    background-color: #C37;
+    outline: .1em solid grey;
+    color: #EEC;
+  }
+}
+
+#clear {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #924;
+  &:hover {
+    background-color: #E26;
+  }
+}
+
+#equals {
+  grid-column: 4;
+  grid-row: 4/6;
+  height: 99px;
+  background-color: #273;
+  &:hover {
+    background-color: #C77;
+  }
+}
+
+#zero { 
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
